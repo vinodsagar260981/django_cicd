@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cp -rf jenkinspro.conf /etc/nginx/conf.d
+sudo cp -rf jenkinspro.conf /etc/nginx/sites-available/jenkinspro
 chmod 710 /var/lib/jenkins/workspace/django-cicd
 
 sudo ln -s /etc/nginx/sites-available/jenkinspro /etc/nginx/sites-enabled
